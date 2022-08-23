@@ -1,0 +1,5 @@
+Asks user for the food type; Food type must be 'alpha', if otherwise, asks user for a valid food type.
+Asks user for the time needed for food to be done;  time needed must be 'numeric', if otherwise, asks user for a valid time.
+Asks user for alerm period;alerm period must be 'numeric' , if otherwise, asks user for a valid alerm period.It must be less than or equal to the time needed for food to be done,so as to avoid the food getting burnt.
+alerm frequency calculates the number of times the alerm will sound before the food is done. which is the time needed for food to be done divided by the alerm period... The ceil division is used so as to include the remainder if any. (e.g, 7/3=3, which means that the alerm will sound in 3mins (2 times) and 1min for the third )
+cooked time=0:  if (time neededinsec - cookedTime >= alarmPeriodInSeconds), alarm should make a sound.  
